@@ -34,6 +34,18 @@
 4. Conclusion: Travelers on the commentary tradition
 
 
+* Preamble
+
+** Support
+
+The /Ajax Multi-Commentary/ project was funded by the Swiss National
+Science Foundation under the funding scheme Ambizione (grant
+no. PZ00P1​_186033).
+
+- PI: Matteo Romanello
+- PhD Student: Sven Najem-Meyer
+- RSE: Charles Pletcher (hi!)
+
 * Introduction: What's so ANT-ish about that?
 
 ** What is the \emph{AjMC}?
