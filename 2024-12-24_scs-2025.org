@@ -1,0 +1,354 @@
+#+startup: beamer
+#+LATEX_CLASS: beamer
+#+TITLE: The \emph{Ajax} Multi-Commentary: An interactive visualization of commentary networks
+#+AUTHOR: Charles Pletcher
+#+EMAIL: charles.pletcher@columbia.edu
+#+DATE: January 5, 2025
+#+LATEX_HEADER: \usepackage[latin, greek.polutoniko, english]{babel}
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER_EXTRA: \AtBeginSection[]{
+#+LATEX_HEADER_EXTRA:  \begin{frame}
+#+LATEX_HEADER_EXTRA:  \vfill
+#+LATEX_HEADER_EXTRA:  \centering
+#+LATEX_HEADER_EXTRA:  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+#+LATEX_HEADER_EXTRA:  \usebeamerfont{title}\insertsectionhead\par%
+#+LATEX_HEADER_EXTRA: \end{beamercolorbox}
+#+LATEX_HEADER_EXTRA:  \vfill
+#+LATEX_HEADER_EXTRA:  \end{frame}
+#+LATEX_HEADER_EXTRA: }
+#+BEAMER_THEME: Rochester
+#+BEAMER_FONT_THEME: serif
+#+BEAMER_HEADER: \setmainfont{Linux Libertine O}
+#+OPTIONS: H:2 toc:nil *:t
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+cite_export: csl chicago-author-date.csl
+
+* Overview
+
+** Outline of the presentation
+
+1. Introduction: What's so ANT-ish about that?
+2. Commentaries: Intermediaries or mediators?
+3. Multi-commentaries: What do they do?
+4. Conclusion: Travelers on the commentary tradition
+
+
+* Introduction: What's so ANT-ish about that?
+
+** What is the \emph{AjMC}?
+
+- Roughly 200 years of commentaries on Sophocles' /Ajax/
+- Online version (https://multi.ajmc.ch) only has public-domain commentaries
+- Private version able to show Finglass, Demont, and forthcoming
+  commentaries for those with access rights
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+The \emph{Ajax} Multi-Commentary --- available at
+https://multi.ajmc.ch [cite:@Pletcher.EtAl2024] --- is a born-digital platform for
+simultaneously consulting the past 200 years of commentaries on
+Sophocles' \emph{Ajax} alongside a more or less uncontroversial
+edition of the critical text (Lloyd-Jones and Wilson's OCT, as
+digitized by the Perseus Project). Hereafter called the ``AjMC'' for
+short, this project involves a fair amount of computational
+heavy-lifting: OCR on scans of thousands of pages of commentaries,
+including automated detection of each page's layout; natural language
+processing and named entity recognition to determine citations and
+other nouns of interest within each glossa; and a reading environment
+that provides interfaces for all of the above as well as ways to
+change the critical text, tabulate citations, and view lemmata and
+glossae at a glance.
+
+** What is the \emph{AjMC}?
+
+[[./ajmc_1.png]]
+
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+If we have time, I'd be happy to present a live demo of the
+application later. For now, I'm hoping that a screenshot will suffice
+to give you a sense of how the application works. You can see that we
+have navigation and filters for the available (public-domain)
+commentaries on the left, the critical text in the center, and glossae
+on the right. (I'm using the term ``glossae'' somewhat freely here, as
+its what we call the whole object in the programming environment.)
+I've expanded one of the glossae to show that it includes an OCR
+transcription as well as an scanned image of the page, with the
+relevant comment and lemma (if available) highlighted in blue.
+
+To start, we'll discuss the reading environment's ``heat\-map'' of
+citations, which shows the density of glossae among all available
+commentaries on each lemma. From this starting point, we will briefly
+highlight the various actors and networks that emerge in the seemingly
+--- but only seemingly --- synchronic presentation of commentaries,
+before finally presenting a few thoughts on how an ANT-informed view
+of the multi-commentary enriches our reading experience and opens up
+new avenues of investigation in the commentary tradition.
+
+
+** A note about reading commentaries this way
+
+#+BEGIN_quote
+    Action should remain a surprise, a mediation, an event. It is for
+    this reason that we should begin, here again, not from the
+    ‘determination of action by society’, the ‘calculative abilities
+    of individuals’, or the ‘power of the unconscious’ as we would
+    ordinarily do, but rather from the under-determination of action,
+    from the uncertainties and controversies about who and what is
+    acting when ‘we’ act—and there is of course no way to decide
+    whether this source of uncertainty resides in the analyst or in
+    the actor. [cite:@Latour2005 p. 45]
+#+END_quote
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+[Read quotation]
+
+Engaging with commentaries in this way brings Latour's questions about
+the under-determination of action to the fore. It discombobulates our
+sense of ``we'' and makes clear how the networks of citation and
+comment challenge our ability to locate the sources of uncertainty.
+
+
+** Reading with a multi-commentary
+
+#+BEGIN_quote
+If it is true, as ANT claims, that the social landscape possesses such
+a flat `networky' topography and that the ingredients making up
+society travel inside tiny conduits, what is in between the meshes of
+such a circuitry? ... I call this background plasma, namely that which
+is not yet formatted, not yet measured, not yet socialized, not yet
+engaged in metrological chains, and not yet covered, surveyed,
+mobilized, or subjectified. [cite:@Latour2005 p. 242; p. 244]
+#+END_quote
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+In so doing, reading with a ``multi-commentary'' also forces us to
+confront the endless recursions of interpretation that are prompted by
+/any/ commentary, meaning that we need to investigate what Latour
+refers to as the empty space between the threads in the network.
+
+** Second /stasimon/ (vv. 693–718)
+
+[[./second-stasimon_ephriksa.png]]
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+In order to demonstrate this point, I want to look at a few glossae on
+the second stasimon. (If the glossae look a little sparse, it's
+because we're only highlighting lines and lemmata that
+have been confirmed by hand. We hope to have filled out most of
+the annotations by next summer.)
+
+As this screenshot on the first few lines shows, several comments
+overlap by targeting the lemma ἔφριξ' in line 693. It is tempting at
+first to treat these comments and the citations that they contain as
+what Rita Felski has called ``network-y'' networks [cite:@Felski2016
+p. 748]. We certainly could deploy some network theory here, where,
+for example, each commentary is a vertex with edges connecting it to
+the web of shared references that emerge from the glossae's internal
+citations --- but to do so is beyond the scope of this presentation.
+
+Rather, we would do well to take a leaf from Michael Witmore's
+article, ``Latour, the Digital Humanities, and the Divided Kingdom of
+Knowledge,'' and notice how ``No matter how distinctive or
+statistically sound the pattern discovered is, one has done nothing to
+explain it until one provides a motivated link between the features in
+question, their patterned distribution, and something else that this
+pattern is a proxy /for/'' [cite:@Witmore2016 p. 366]. Witmore's
+argument deals mainly with the complementarity of humanistic and
+quantitative modes of inquiry, drawing on Latour's notion of ``objects
+of concern'' to theorize the aforementioned feature-proxy
+relationship.
+
+In Latourian terms, the glossae here are actors, and the network ---
+really, as both Felski and Latour stress, the assemblage --- of
+citations that they summon necessarily occurs through the intervention
+of the reader of the multicommentary.
+
+* Commentaries: Intermediaries or mediators?
+
+** Of pointers and pencils
+
+#+BEGIN_QUOTE
+A network is not so much something we find as something we make; it is
+the pencil rather than the object drawn; it is a means of checking how
+much ``energy, movement, and specificity our own reports are able to
+capture.'' [cite:@Felski2016 749]
+#+END_QUOTE
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+Early in her 2016 article on ANT and literary studies, Felski
+clarifies what Latour means by network by comparing it to a pencil:
+
+#+BEGIN_QUOTE
+A network is not so much something we find as something we make; it is
+the pencil rather than the object drawn; it is a means of checking how
+much ``energy, movement, and specificity our own reports are able to
+capture.'' [cite:@Felski2016 749]
+#+END_QUOTE
+
+Like Felsk's pencil, the multicommentary is not an inert object to be
+stumbled upon but a tool for activating relationships among
+commentators, primary texts, and readers. Even when we focus on these
+older, public-domain commentaries, the pencil metaphor reminds us that
+we must continually encounter their immediacy. This reading
+environment, if I may be so bold, provides tools for assembling a
+critical network that lets us notice new things --- or re-notice old
+things --- about the relationship between commentaries and the texts
+that they gloss and cite.
+
+** Commentaries as mediators
+
+#+BEGIN_QUOTE
+An /intermediary/, in my vocabulary, is what transports meaning or
+force without transformation: defining its inputs is enough to define
+its outputs.... /Mediators/, on the other hand ... transform,
+translate, distort, and modify the meaning of the elements they are
+supposed to carry. [cite:@Latour2005 p. 39]
+#+END_QUOTE
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+When Latour articulates the difference between an intermediary and a
+mediator, he gestures towards a debate at least as old as Plato's
+/Phaedrus/: What can that scroll of Lysias up one's sleeve --- or
+that commentary in the sidebar --- actually say?
+
+#+BEGIN_QUOTE
+An /intermediary/, in my vocabulary, is what transports meaning or
+force without transformation: defining its inputs is enough to define
+its outputs.... /Mediators/, on the other hand ... transform,
+translate, distort, and modify the meaning of the elements they are
+supposed to carry. [cite:@Latour2005 p. 39]
+#+END_QUOTE
+
+Latour's radical move, which gets him dangerously close to some
+elements of new materialism that ought to give us pause, is to show
+that even the ``dead and rigid knowledge shut up in /biblia,'' to draw
+Derrida into the conversation, can nevertheless participate as
+mediators and actors in the social realm of the philologist's work.
+
+* Multi-commentaries: What do they do?
+
+** What can't multi-commentaries do?
+
+#+BEGIN_QUOTE
+Third, interactions are not /synoptic/. Very few of the participants in
+a given course of action are simultaneously visible at any given
+point. The lecturer might believe she is center stage, but that does
+not mean that many others are not acting as well, only that there is
+no way to sum them up. [cite:@Latour2005 p. 201]
+#+END_QUOTE
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+In Latour's list of five things that face-to-face interactions cannot
+do, he notes that ``Third, interactions are not /synoptic/.'' If
+you'll permit me to treat reading a commentary as a kind of
+face-to-face interaction --- even if only a poor proxy for one ---
+this condition of the interaction seems to me one that we often
+forget. It is easy to slip into a mental mode where we believe that we
+have brought together all of the relevant knowledge on a passage under
+a single heading, but the multicommentary and Latour help to disabuse
+us of this notion by reminding us of all the knowledge that is not
+there. The multicommentary /calls attention to our attention/, that
+is, it makes us notice where our eye wanders on the screen, which
+commentators and citations we look for and which we overlook.
+
+It is somewhat paradoxical that manually flipping through pages of
+large commentaries makes it easier to fall for the synoptic illusion
+of the knowledge that we have thereby assembled. But the homogeneity
+of the multicommentary interface, I want to suggest, makes it more
+obvious that we are dealing with actors that bring their own
+positions, networks, and histories to bear on our own work --- even
+if, as Finglass and others have shown, we mostly forget any Sophoclean
+commentator before Jebb [cite:@Finglass2015].
+
+* Conclusion: Travelers on the commentary tradition
+
+** A movable network
+
+#+BEGIN_QUOTE
+Whereas the tradition distinguished the common good (a
+moralist concern) and the common world (naturally given), I proposed
+replacing ‘the politics of nature’ by the progressive composition of
+one common world. This was, in my view, the way to redefine science
+and politics and to carry out the task of political epistemology
+forced upon us by the various ecological crises. [cite:@Latour2005 p. 254]
+#+END_QUOTE
+
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+
+Throughout /Reassembling the Social/, Latour uses the metaphor of traveling,
+and specifically traveling slowly, to describe his and the reader's approach
+to Actor–Network Theory. In the conclusion, this metaphor is subsumed under
+the heading of various notions of progress, as in the quotation on this slide:
+
+#+BEGIN_QUOTE
+Whereas the tradition distinguished the common good (a
+moralist concern) and the common world (naturally given), I proposed
+replacing ‘the politics of nature’ by the progressive composition of
+one common world. This was, in my view, the way to redefine science
+and politics and to carry out the task of political epistemology
+forced upon us by the various ecological crises. [cite:@Latour2005 p. 254]
+#+END_QUOTE
+
+Although the multicommentary presented here at first appears to be a
+static entity --- and in a punnily ironic twist, it is built as a
+static collection of files that do not depend on a server --- I think
+it is useful to think about the assemblage of commentaries
+ecologically, that is, as a collective that forces us to reckon with
+how we order our epistemological /oikoi/.
+
+If the multicommentary succeeds in generating networks of citations,
+it is thanks in large part to the efforts of the readers who fill in
+the gaps --- what Latour calls ``plasma'' --- between glossae, primary
+texts, and even the historical situations of the commentators
+themselves. Above all, I hope to have shown that even Hermann's
+pedantic Latin commentary --- to take just one example --- has the
+potential to join modern assemblages of glossae to help us see /Ajax/
+differently. By mobilizing these different points of view, we tap into
+the core effort of renewing and reusing these texts that, despite
+changes in the social order, have stuck with us for twenty-five hundred
+years.
+
+Thank you.
+
+** Bibliography
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks,label=
+:END:
+
+#+print_bibliography:
