@@ -26,6 +26,15 @@
 
 * Overview
 
+** Notes
+
+#+attr_latex: :width 150px
+[[./notes_links.png]]
+
+#+BEGIN_CENTER
+https://bit.ly/4gMnOTd
+#+END_CENTER
+
 ** Outline of the presentation
 
 1. Introduction: What's so ANT-ish about that?
@@ -43,6 +52,7 @@ Science Foundation under the funding scheme Ambizione (grant
 no. PZ00P1​_186033).
 
 - PI: Matteo Romanello
+
 - PhD Student: Sven Najem-Meyer
 - RSE: Charles Pletcher (hi!)
 
