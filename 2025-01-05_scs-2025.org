@@ -4,7 +4,7 @@
 #+AUTHOR: Charles Pletcher
 #+EMAIL: charles.pletcher@columbia.edu
 #+DATE: January 5, 2025
-#+LATEX_HEADER: \usepackage[latin, greek.polutoniko, english]{babel}
+#+LATEX_HEADER: \usepackage[latin, polytonicgreek, english]{babel}
 #+LATEX_HEADER: \usepackage{fontspec}
 #+LATEX_HEADER_EXTRA: \AtBeginSection[]{
 #+LATEX_HEADER_EXTRA:  \begin{frame}
@@ -181,13 +181,15 @@ have been confirmed by hand. We hope to have filled out most of
 the annotations by next summer.)
 
 As this screenshot on the first few lines shows, several comments
-overlap by targeting the lemma ἔφριξ' in line 693. It is tempting at
-first to treat these comments and the citations that they contain as
-what Rita Felski has called ``network-y'' networks [cite:@Felski2016
-p. 748]. We certainly could deploy some network theory here, where,
-for example, each commentary is a vertex with edges connecting it to
-the web of shared references that emerge from the glossae's internal
-citations --- but to do so is beyond the scope of this presentation.
+overlap by targeting the lemma
+\foreignlanguage{polytonicgreek}{ἔφριξ'} in line 693. It is tempting
+at first to treat these comments and the citations that they contain
+as what Rita Felski has called ``network-y'' networks
+[cite:@Felski2016 p. 748]. We certainly could deploy some network
+theory here, where, for example, each commentary is a vertex with
+edges connecting it to the web of shared references that emerge from
+the glossae's internal citations --- but to do so is beyond the scope
+of this presentation.
 
 Rather, we would do well to take a leaf from Michael Witmore's
 article, ``Latour, the Digital Humanities, and the Divided Kingdom of
@@ -232,7 +234,7 @@ much ``energy, movement, and specificity our own reports are able to
 capture.'' [cite:@Felski2016 749]
 #+END_QUOTE
 
-Like Felsk's pencil, the multicommentary is not an inert object to be
+Like Felski's pencil, the multicommentary is not an inert object to be
 stumbled upon but a tool for activating relationships among
 commentators, primary texts, and readers. Even when we focus on these
 older, public-domain commentaries, the pencil metaphor reminds us that
